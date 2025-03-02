@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 3,
             title: "В Україні стартував масштабний IT-форум",
             description: "У Києві відбувся один із найбільших IT-форумів, на якому представили нові технології штучного інтелекту та кібербезпеки.",
-            image: "https://independentview.net/wp-content/uploads/2017/09/256880.jpg", // Використовуй зображення, яке я згенерував
+            image: "https://independentview.net/wp-content/uploads/2017/09/256880.jpg",
             category: "технології"
         }
     ];
@@ -37,9 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h3>${news.title}</h3>
                     <p>${news.description}</p>
                 ;
-                newsCard.addEventListener("click", () => {
-                    window.location.href = news.html?id=${news.id};
-                });
                 newsContainer.appendChild(newsCard);
             });
     }
